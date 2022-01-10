@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //==================Init==================
         etWeight = findViewById(R.id.editTextWeight);
         etHeight = findViewById(R.id.editTextHeight);
         btncal = findViewById(R.id.cal);
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         tvBMI = findViewById(R.id.textViewBMI);
         tvOpt = findViewById(R.id.textViewOption);
         tvOutPut = findViewById(R.id.textViewStatus);
+        //==================Init==================
 
 
         btnreset.setOnClickListener(new View.OnClickListener() {
@@ -106,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //==================================FuncZone=======================================
     @Override
     protected void onPause() {
         super.onPause();
@@ -151,4 +154,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     }
+    //==================================FuncZone=======================================
 }
